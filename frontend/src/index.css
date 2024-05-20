@@ -4,43 +4,54 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Outfit;
+  font-family: 'Outfit', sans-serif;
 }
+
 #root {
   min-height: 100vh;
   display: flex;
 }
+body{
+}
+
 .main-container {
+  width: 100%;
   max-width: 900px;
   margin: auto;
 }
+
 .main .greet {
-  margin: 50px 0px;
-  font-size: 56px;
+  margin: 10px 0;
+  font-size: 45px;
   color: #c4c7c5;
   font-weight: 500;
   padding: 20px;
 }
+
 .main .greet span {
   background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main .cards{
+
+.main .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-  gap:15px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
   padding: 20px;
 }
-.main .card{
+
+.main .card {
   height: 200px;
   padding: 15px;
   background-color: #f0f4f9;
-  border-radius: 10px;
+  border-radius: 20px;
   position: relative;
   cursor: pointer;
+  left: -10px;
 }
-.main .card img{
+
+.main .card img {
   width: 35px;
   padding: 5px;
   position: absolute;
@@ -48,12 +59,77 @@
   bottom: 10px;
   right: 10px;
 }
-.main .card:hover{
+
+.main .card:hover {
   transform: scale(1.05);
   transition: transform 0.2s linear;
   color: black;
 }
-.main .card p{
+
+.main .card p {
   color: #585858;
-  font-size: 17px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+  .main .greet {
+    font-size: 25px;
+    margin: 30px 0;
+  }
+
+  .main .cards {
+    padding: 30px;
+  }
+
+  .main .card {
+    height: 250px;
+  }
+
+  .main .card p {
+    font-size: 14px;
+  }
+}
+
+/* For smaller devices like smartphones */
+@media screen and (max-width: 768px) {
+  .main .greet {
+    font-size: 32px;
+    margin: 30px 0;
+  }
+
+  .main .cards {
+    padding: 30px;
+  }
+
+  .main .card {
+    height: 150px;
+padding: 10px;
+  }
+
+  .main .card p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main .greet {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .main .cards {
+    padding: 25px;
+  }
+
+  .main .card {
+    height: 120px;
+  }
+
+  .main .card p {
+    font-size: 12px;
+  }
 }

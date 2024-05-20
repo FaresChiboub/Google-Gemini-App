@@ -4,10 +4,9 @@
   padding-bottom: 15vh;
   position: relative;
 }
-.main .nav .google-icon{
-  width: 90px;
+.main .nav .google-icon {
+  width: 80px;
 }
-
 .main .nav {
   display: flex;
   align-items: center;
@@ -16,22 +15,16 @@
   padding: 20px 2%;
   color: #585858;
 }
-
 .main .nav img {
-  width: 40px;
+  width: 30px;
   cursor: pointer;
 }
-.main .nav p{
-  font-size: 24px;
-  letter-spacing: 4px;
-}
-
 .main-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
   max-width: 900px;
-  padding: 0px 20px;
+  padding: 10px 20px;
   margin: auto;
 }
 
@@ -42,7 +35,8 @@
   gap: 20px;
   background-color: #f0f4f9;
   padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 40px;
+  margin-bottom: -5px;
 }
 
 .search-box img {
@@ -58,12 +52,71 @@
   padding: 8px;
   font-size: 18px;
 }
-.bottom-info{
+.bottom-info {
   padding: 18px;
   font-size: 14px;
   font-weight: 500;
   position: relative;
-  left: 30px;
   color: #888585;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .main .nav {
+    font-size: 18px;
+  }
+
+  .main .nav img {
+    width: 25px;
+  }
+
+  .search-box {
+    padding: 8px 15px;
+    border-radius: 30px;
+  }
+
+  .search-box img {
+    width: 20px;
+  }
+
+  .search-box input {
+    font-size: 16px;
+  }
+
+  .bottom-info {
+    left: 20px;
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .nav {
+    font-size: 16px;
+  }
+
+  .main .nav img {
+    width: 20px;
+  }
+
+  .search-box {
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+
+  .search-box img {
+    width: 18px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .bottom-info {
+    left: 15px;
+    padding: 8px;
+    font-size: 10px;
+  }
+}

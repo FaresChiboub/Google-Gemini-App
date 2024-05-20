@@ -17,25 +17,25 @@ function Main() {
         </div>
         <div className="cards">
           <div className="card">
-            <p>
+          <p className="CardText">
               Suggestion: Explore the impact of renewable energy on the
               environment
             </p>
             <img src={assets.compass_icon} alt="" />
           </div>
           <div className="card">
-            <p>
+          <p className="CardText">
               What were the key milestones in the early days of space
               exploration?
             </p>
             <img src={assets.bulb_icon} alt="" />
           </div>
           <div className="card">
-            <p>React is a JavaScript library for building user interfaces</p>
+          <p className="CardText">React is a JavaScript library for building user interfaces</p>
             <img src={assets.message_icon} alt="" />
           </div>
           <div className="card">
-            <p>Improve the readability of the following code</p>
+          <p className="CardText">Improve the readability of the following code</p>
             <img src={assets.code_icon} alt="" />
           </div>
         </div>
@@ -48,8 +48,7 @@ function Main() {
             <img src={assets.send_icon} alt="" />
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate info,users should remain
-            vigilant and verify information from multiple sources for accuracy
+           Gemini can make mistakes. Check important info
           </p>
         </div>
       </div>
