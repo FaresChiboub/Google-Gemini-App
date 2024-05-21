@@ -3,8 +3,9 @@
   display: inline-flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #f0f4f9;
   padding: 10px 1%;
+  background: url("/blue2.jpg");
+  background-size: cover;
   transition: width 0.5s ease;
   width: 120px;
   overflow: hidden;
@@ -20,11 +21,13 @@
 
 .sidebar img {
   width: 25px;
-}
 
+  filter: invert(100%);
+}
 .sidebar .menu:hover {
   transform: rotate(90deg);
   transition: transform 0.5s;
+  color: black;
 }
 
 .sidebar .menu {
@@ -39,10 +42,10 @@
   align-items: center;
   gap: 10px;
   padding: 10px 15px;
-  background-color: #e6eaf1;
+  background-color: #2c2f5d55; /* Background color for the button */
   border-radius: 50px;
   font-size: 14px;
-  color: gray;
+  color: white; /* Text color set to white */
   cursor: pointer;
 }
 
@@ -50,12 +53,12 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-
 }
 
 .sidebar .recent-title {
   margin-top: 30px;
   margin-bottom: 20px;
+  color: white; /* Text color set to white */
 }
 
 .sidebar .recent-entry {
@@ -65,39 +68,84 @@
   padding: 10px;
   padding-right: 40px;
   border-radius: 50px;
-  color: #282828;
+  color: white; /* Text color set to white */
 }
 
 .sidebar .recent-entry:hover {
-  background-color: #e2e6eb;
+  background-color: #32576851;
 }
 
 .sidebar .bottom {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-
 }
 
 @media only screen and (max-width: 1024px) {
   .sidebar {
     width: 140px;
   }
-  
+
   .sidebar.extended {
     width: 190px;
   }
-  
+
   .sidebar .menu {
     margin-left: 7px;
   }
-  
+
   .sidebar .new-chat {
     padding: 8px 14px;
     font-size: 12px;
   }
-  
+
   .sidebar img {
     width: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .sidebar.extended {
+    width: 140px;
+  }
+
+  .sidebar .menu {
+    margin-left: 5px;
+  }
+
+  .sidebar .new-chat {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .sidebar img {
+    width: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar.extended {
+    width: 130px;
+  }
+
+  .sidebar .menu {
+    margin-left: 3px;
+  }
+
+  .sidebar .new-chat {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+
+  .sidebar img {
+    width: 14px;
   }
 }
