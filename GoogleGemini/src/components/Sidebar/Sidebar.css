@@ -48,6 +48,9 @@
   color: white; /* Text color set to white */
   cursor: pointer;
 }
+.sidebar .new-chat:hover{
+  background-color: rgba(33, 33, 64, 0.329);
+}
 
 .sidebar .recent {
   display: flex;

@@ -88,7 +88,7 @@ function Main() {
             />
             <img src={assets.gallery_icon} alt="" />
             <img src={assets.mic_icon} alt="" />
-            <img onClick={() => onSend()} src={assets.send_icon} alt="" />
+            {input?<img onClick={() => onSend()} src={assets.send_icon} alt="" />:null}
           </div>
           <p className="bottom-info">
             Gemini can make mistakes. Check important info
