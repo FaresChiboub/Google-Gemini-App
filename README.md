@@ -1,20 +1,16 @@
-# Google Gemini Clone Chat App
+🚀 **Deployment**
 
-🚀 Welcome to the Google Gemini Clone Chat App!
+📱 **Project Name:** Google Gemini Clone Chat App
 
-This project is a clone of the Google Gemini chat application. It allows users to interact with a generative AI model to get responses to their prompts in real-time.
+🌐 **Live Demo:** [Google Gemini Clone Chat App](https://main--googlegeminiclonesite.netlify.app/)
 
-## Features
+🎉 **Features:**
+- ✨ **Real-time Chat:** Engage in conversations with the generative AI model in real-time.
+- ⚡ **Generative AI Model:** Utilizes the power of Google's Generative AI model to provide responses to user prompts.
+- 🔒 **Safety Settings:** Implemented to filter out harmful content.
+- 🔧 **Built with Vite:** The app is built using Vite, a fast and modern build tool for frontend development.
 
-✨ **Real-time Chat**: Engage in conversations with the generative AI model in real-time.
-
-⚡ **Generative AI Model**: Utilizes the power of Google's Generative AI model to provide responses to user prompts.
-
-🔒 **Safety Settings**: Safety settings are implemented to filter out harmful content.
-
-🔧 **Built with Vite**: The app is built using Vite, a fast and modern build tool for frontend development.
-
-## Installation
+🛠️ **Installation**
 
 To run the app locally, follow these steps:
 
@@ -22,7 +18,7 @@ To run the app locally, follow these steps:
 2. Navigate to the project directory.
 3. Install dependencies using npm or yarn.
 
-## Usage
+🔍 **Usage**
 
 1. Enter a prompt in the input field and press Enter or click the Send button.
 2. Chat with the AI model and receive responses in real-time.
